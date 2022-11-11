@@ -1,0 +1,75 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Header.nav */
+.btn {
+    border-radius: 0.6rem;
+    font-size: 8pt;
+    padding: 10px 20px;
+}
+
+.wrapper-header {
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    background: transparent;
+    position: sticky;
+    transition: .3s ease-in-out;
+    padding: 30px 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-item {
+    margin-left: 15px;
+    padding: 0 5px;
+}
+
+/* Header.nav End */
+
+/* Hero (Top) */
+.hero {
+    background-image: url("bg-hero.jpg");
+    width: 100%;
+    min-height: 50vh;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.img-cover {
+    width: 75%;
+    position: relative;
+    left: 50px;
+}
+
+/* Hero (Top) End */
+/* collab */
+.main-collab{
+    background-color: rgb(218, 218, 218);
+}
+.logos img{
+    height: 100px;
+    padding: 0 30px;
+}
+.logos img:nth-child(4){
+    height: 70px;
+}
+/* collab End */
+
+
