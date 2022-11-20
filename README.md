@@ -5,5 +5,5 @@ this web uses Languages:
 ##### HTML
 ##### CSS
 ##### JavaScript
-##### BootStarp
+##### BootStrap
 ##### AOS Library
