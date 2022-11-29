@@ -33,15 +33,16 @@
 }
 
 .nav-item {
-    margin-left: 15px;
+    margin: 0 5px;
     padding: 0 5px;
 }
 
+
 /* Header.nav End */
 
-/* Hero (Top) */
+/* intro top */
 .hero {
-    background-image: url("bg-hero.jpg");
+    background-image: url("img/bg-hero.jpg");
     width: 100%;
     min-height: 50vh;
     height: 100vh;
@@ -50,6 +51,7 @@
     background-position: center;
     position: relative;
     color: rgba(255, 255, 255, 0.8);
+    padding: 0px 0px 30px 0px;
 }
 
 .img-cover {
@@ -58,18 +60,83 @@
     left: 50px;
 }
 
-/* Hero (Top) End */
+/* ini buat wave */
+.wrapper-wave {
+    position: relative;
+    width: 100%;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave1 {
+    animation: wave1 20s linear infinite;
+    z-index: 2;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave2 {
+    animation: wave2 10s linear infinite;
+    z-index: 1;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: -5px;
+}
+
+@keyframes wave1 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+
+/* intro top End */
 /* collab */
-.main-collab{
+.main-collab {
     background-color: rgb(218, 218, 218);
 }
-.logos img{
+
+.logos img {
     height: 100px;
     padding: 0 30px;
 }
-.logos img:nth-child(4){
+
+.logos img:nth-child(4) {
     height: 70px;
 }
+
 /* collab End */
+/* intro */
+.icon-text-intro {
+    font-size: 3rem;
+    color: transparent;
+    opacity: 1;
+    background-clip: text;
+    background-image: -webkit-linear-gradient(rgb(154, 153, 150), rgb(98, 160, 234));
+    text-shadow: rgb(153, 193, 241) 0px 0.1px 0px;
+}
 
-
+/* intro End */
